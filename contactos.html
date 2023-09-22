@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logos/logos/logo_04.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/contactos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@100&family=Nunito:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Contacto</title>
+</head>
+<body>
+  <!-- menu -->
+  <header class="hero">
+    <nav class="nav contenedor">
+        <div>
+          <a href="Menu.html"><img src="img/logos/logos_nombre/logo_01_nombre.png" alt="" class="logo"> </a>
+        </div>
+
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="Menu.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="Acerca de.html" class="nav__links">Acerca de</a>
+            </li>
+            <li class="nav__items">
+                <a href="que vendemos.html" class="nav__links">Que Vendemos</a>
+            </li>
+            <li class="nav__items">
+                <a href="contactos.html" class="nav__links">Contactos</a>
+            </li>
+
+            <img src="img/images/close.svg" class="nav__close">
+        </ul>
+
+        <div class="nav__menu">
+            <img src="img/images/menu.svg" class="nav__img">
+        </div>
+    </nav>
+<!-- fin de menu -->
+
+<!-- contactos -->
+<!-- inicio -->
+<div class="conteiner">
+  <div class="imagen-izquierda">
+    <div class="imagen izquierda"><img src="img/img-contactos/izquierda.png" alt=""></div>
+    <div class="imagen derecha"><img src="img/img-contactos/derecha.png" alt=""></div>
+    <div class="imagen logo-negocio"><img src="img/logos/logos_nombre/logo_01_nombre.png" alt=""></div>
+    <div class="imagen burbuja-izquierda"><img src="img/img-contactos/burbuja-izquierda.png" alt=""></div>
+    <div class="imagen burbuja-derecha"><img src="img/img-contactos/burbuja-derecha.png" alt=""></div>
+  </div>
+  <!-- texto -->
+  <div class="text-container">
+    <h1>CONTACTANOS</h1>
+    <p>si tienes dudas o consultas puedes contactarnos en nuestras redes sociales o por nuestro correo electrónico.</p>
+  </div>
+  <!-- fin de texto -->
+  <!-- botones -->
+  <div class="botones">
+
+    <a href="https://wa.me/+51945011437" class="btn btn-2" style="--cr: #43d854">
+      WHATSAPP
+      <span></span>
+      <span></span>
+    </a>
+    <a href="https://www.instagram.com/?next=%2F" class="btn btn-2" style="--cr: #ff0095">
+      INSTAGRAM
+      <span></span>
+      <span></span>
+    </a>
+    <a href="" class="btn btn-2" style="--cr: #55acee">
+      FACEBOOK
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+  <!-- fin de botones -->
+</div>
+<!-- fin de inicio -->
+<!-- fin de contactos -->
+
+  <!-- scrool -->
+  <div class="go-top-container">
+    <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</div>
+<!-- fin scrool -->
+
+<!-- JAVA -->
+<script>
+  (function(){
+    const openButton = document.querySelector('.nav__menu');
+    const menu = document.querySelector('.nav__link');
+    const closeMenu = document.querySelector('.nav__close');
+
+    openButton.addEventListener('click', ()=>{
+        menu.classList.add('nav__link--show');
+    });
+
+    closeMenu.addEventListener('click', ()=>{
+        menu.classList.remove('nav__link--show');
+    });
+})();
+</script>
+<!-- FIN DE JAVA -->
+</body>
+</html>
